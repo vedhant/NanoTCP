@@ -1,0 +1,2 @@
+gcc -pthread -o my_tcp src/tcp/tcp.c src/tcp_ip_interface/tcp_ip_interface.c src/socket/socket_tcp.c src/tcp/hash_map.c src/tcp/handle_user_calls.c
+gcc -o ex_client examples/client.c src/socket/socket_app.c

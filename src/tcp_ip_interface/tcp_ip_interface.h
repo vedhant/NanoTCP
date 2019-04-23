@@ -7,9 +7,9 @@
 
 extern int raw_socket;
 
-void init_tcp_ip_interface();
+uint32_t init_tcp_ip_interface();
 char * receive_packets_from_ip(int * tcp_packet_size);
-int send_packets_to_ip(char foreign_ip[], char send_buffer[], int send_buff_size);
+int send_packets_to_ip(uint32_t foreign_ip, char send_buffer[], int send_buff_size);
 
 // Internet Header Format
 
